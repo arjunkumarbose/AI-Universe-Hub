@@ -10,7 +10,7 @@ const displayAi = (getAllAi, isSorted, showAll) => {
   aiContainer.innerHTML = "";
   let slicedData = [];
   if (!showAll) {
-    slicedData = getAllAi.slice(0, 6);
+    slicedData = getAllAi.slice(0, 12);
     if (isSorted) {
       slicedData = getAllAi.sort((a, b) => {
         const date1 = new Date(a.published_in);
